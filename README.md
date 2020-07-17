@@ -24,5 +24,6 @@ Since hosting has been done free of cost, you'll see their logo.
 &copy; Rajas Bhatt
 
 `rajas.bhatt@yahoo.com`
+`rajas.bhatt.7@gmail.com`
 
 </div>
