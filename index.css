@@ -1,0 +1,88 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.white{
+	color:white !important;
+}
+
+.main{
+	min-height: 100vh;
+	background-image: linear-gradient(to right,rgba(0,0,0,0.15) 55%, rgba(0, 0, 0, 0.55)), url("./assets/home.jpg") ;
+	background-position: left;
+	background-size: cover;
+	width:100%;
+	position: relative;
+}
+.buttons{
+	padding:20px 50px;
+	float: right;
+	color:white;
+}
+
+.text-main{
+	position: absolute;
+	top:50%;
+	left:50%;
+	width:80%;
+	color:white;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	font-size: 2.6rem;
+}
+
+.heading{
+	font-size: 5rem;
+}
+.text{
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+/*
+ANIMATIONS */
+.bouncy{
+	animation:bouncy 5s infinite linear;
+	position:relative;
+}
+@keyframes bouncy {
+	0%{top:0em}
+	40%{top:0em}
+	43%{top:-0.9em}
+	46%{top:0em}
+	48%{top:-0.4em}
+	50%{top:0em}
+	100%{top:0em;}
+}
+
+
+@media (max-width:600px) {
+	.main{
+		background-image: linear-gradient(to right,rgba(0,0,0,0.45),rgba(0, 0, 0, 0.45)), url("./assets/home.jpg") ;
+	}
+	.heading{
+		font-size: 4rem;
+	}
+	.text{
+		font-size: 1.5rem;
+	}
+}
+@media (max-width:450px) {
+	.heading{font-size: 3rem}
+	.buttons{float: none;}
+	.text{line-height: 0rem;}
+	.buttons{
+		padding:20px 50px;
+	}
+	.text-main{
+		width:100%;
+		padding:0 15px;
+		transform: translate(-50%,-50%);
+		box-sizing: border-box;
+	}
+	.text-main a{
+		padding: 15px 12px !important;
+		font-size: 15px;
+	}
+}

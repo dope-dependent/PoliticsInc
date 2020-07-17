@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.main{
+	width: 100%;
+	min-height: 100vh;
+	background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url("../assets/login.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.buttons{
+	padding:20px 50px;
+	float: right;
+	color:white;
+}
+
+.center{
+	text-align: center !important;
+}
+
+.formarea{
+	display: inline-block;
+	width:100%;
+	max-width: 600px;	
+	background-color:rgba(0,0,0, 0.85);
+	color:white;
+	padding: 40px 40px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0px 0px 50px #000000;
+	
+}
+.margin-top-med{
+	padding-top: 110px;
+}
+
+.formarea div input{
+	background-color: rgba(15, 15, 15, 0.85);
+	border: unset;
+	border-bottom:2px solid white;
+	display: inline-block;
+	text-align: center;
+	width:80%;
+	max-width: 400px;
+	box-sizing: border-box;
+	margin:10px 0px 20px 0px;
+	padding:12px 40px;
+	color:#86c232;
+	font-size: 16px;
+}
+
+.formarea div input:focus{
+	outline: none;
+	border-bottom: 2px solid #86c232 !important;
+	caret-color: white;
+}
+
+@media (max-width:600px){
+	.main{
+		background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url("../assets/login.jpg");
+	}
+	.formarea{
+		box-shadow: none;
+		border-radius: 0;
+	}
+	.formarea div input{
+		background-color: rgba(15, 15, 15, 0.85);
+	}
+	.buttons{
+		float: unset;
+		display: block;
+	}
+	.buttons div a{
+		width:100%;
+	}
+	.margin-top-med{
+		padding-top: 20px;
+	}
+}

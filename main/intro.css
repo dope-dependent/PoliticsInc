@@ -1,0 +1,60 @@
+ /* COLORS
+    SEPIA - #704214
+    WHEAT - #FFFDD0
+	BURGUNDY - #800020
+	COFFEE - 	#6F4E37
+	SEAL BROWN - #59260B;
+	OLIVE - #808000 
+	TAWNY - #C06000;
+*/
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.main{
+	min-height: 100vh;
+	background-image: linear-gradient(to bottom,rgba(255, 253, 208, 0.7),rgba(255, 253, 208, 0.7)), url('../assets/welcome.jpg');
+	/* background-color: #272727; */
+	background-size: cover;
+	background-position: right;
+	text-align: left;
+}
+
+.data{
+	padding: 20px;
+	text-align: left !important;
+	color:white;
+	font-weight:300;
+}
+
+.text-heading{
+	text-align:left; 
+	font-weight:400; 
+	font-size:36px;
+	color: #59260B;
+	text-shadow: 0px 0px 2px #59260B;
+}
+
+.text-data{
+	font-size: 24px;
+	margin-left: 40px;
+	text-align:left;
+	color: #6e6e00;
+	font-weight: 500;
+	text-shadow: 0px 0px 2px #6e6e00;
+}
+
+
+@media (max-width:500px){
+	.text-heading{
+		font-size: 28px;
+	}
+	.text-data{
+		font-size: 20px;
+	}
+	
+}
